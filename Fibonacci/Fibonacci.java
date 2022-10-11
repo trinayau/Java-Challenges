@@ -1,4 +1,3 @@
-import java.util.*;
 /* The Fibonacci series is a series of elements where, the previous two elements are added to get the next element,
 * starting with 0 and 1.
  */
