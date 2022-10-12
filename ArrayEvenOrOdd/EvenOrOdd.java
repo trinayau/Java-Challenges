@@ -8,9 +8,9 @@ public class EvenOrOdd {
         ArrayList<Integer> oddArray = new ArrayList<Integer>();
         ArrayList<Integer> evenArray = new ArrayList<Integer>();
         for (int number:givenArray) {
-            if(number%2 != 0 ){
-            evenArray.add(number);}
-            else {
+            if(number%2 != 0 ) {
+                evenArray.add(number);
+            } else {
                 oddArray.add(number);
             }
         }
