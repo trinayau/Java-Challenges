@@ -7,7 +7,6 @@ import static java.util.Arrays.*;
 
 /* Sort array in ascending/descending order*/
 public class SortArray {
-
     public static void sortArrayAsc(int[] arr){
         Arrays.sort(arr);
         System.out.println("Ascending: " + Arrays.toString(arr));
@@ -19,13 +18,10 @@ public class SortArray {
         }
         Collections.reverse(intArr);
         System.out.println("Descending:" + intArr.toString());
-
-
     }
     public static void main(String[] args) {
         int[] test = {5,20,3,19};
         sortArrayAsc(test);
         sortArrayDesc(test);
-
     }
 }
