@@ -91,5 +91,11 @@ public class Employee implements Comparable<Employee>{ // POJO class :Plain old 
         //return e2.getId().compareTo(this.getId());
     }
 
+    //sort employee objects by salary
+
+    public int compareSalary(Employee e2){
+        return this.getSalary().compareTo(e2.getSalary());
+    }
+
 
 }

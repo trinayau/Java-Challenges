@@ -49,6 +49,9 @@ public class Driver {
         Collection<Employee> newEmpList = empMap.values();
         System.out.println(newEmpList);
 
+        System.out.println("Compare salary ascending");
+        empList.sort(new EmployeeSalaryComparator());
+        System.out.println(empList);
 
     }
 
