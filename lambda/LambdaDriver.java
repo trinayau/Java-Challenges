@@ -1,6 +1,8 @@
 package lambda;
 
 import java.awt.datatransfer.StringSelection;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -33,7 +35,29 @@ public class LambdaDriver {
         Function<Employee, String> getEmployeeName = (e) -> e.getName(); //function takes employee and returns string
         System.out.println(getEmployeeName.apply(new Employee(2, "Oracle", 1302.0)));
 
+        //Lambda Uppercase
+        Function<String, String> getUpperCase = (s) -> s.toUpperCase();
+        System.out.println(getUpperCase.apply("hello i am a turtle"));
 
+        //Lambda lowercase
+        Function<String, String> getLowerCase = (s) -> s.toLowerCase();
+        System.out.println(getLowerCase.apply("HELO i am a turtle"));
+
+        //Lambda function to hike all employees salary by 10%
+        List<Employee> empList = new ArrayList<>();
+        empList.add(new Employee(5, "DD", 5000.0));
+        empList.add(new Employee(1, "FF", 3000.0));
+        empList.add(new Employee(7, "JJ", 1000.0));
+        empList.add(new Employee(3, "EE", 2000.0));
+
+        Function<List<Employee>, List<Employee>> hikeAllEmployeeSalary = (emps) -> {
+            for(Employee emp: emps){
+                emp.setSalary(emp.getSalary()*1.1);
+            }
+            return emps;
+        };
+
+        System.out.println(hikeAllEmployeeSalary.apply(empList));
 
 
     }
