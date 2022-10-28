@@ -31,7 +31,7 @@ public class StreamDriver {
         nameList.stream().filter((n) -> n.length() <7).forEach((n) -> System.out.println(n));
 
         //reduce
-        nameList.stream().map((n) -> n.length()).reduce();
+//        nameList.stream().map((n) -> n.length()).reduce();
 
         //Sorted
         nameList.stream().sorted().forEach((n) -> System.out.println(n));
@@ -55,7 +55,7 @@ public class StreamDriver {
         Optional<Double> optSalarySum = empList.stream().map((e) -> e.getSalary()).reduce((s1, s2) -> s1+s2);
         if(optSalarySum.isPresent()) System.out.println("Total sal=" + optSalarySum.get());
         //sort emp by name
-        empList.stream().sorted.forEach((e) -> e1.getSalary().compareTo(e2.getSalary())).forEach((e)-> System.out.println(e));
+//        empList.stream().sorted.forEach((e) -> e1.getSalary().compareTo(e2.getSalary())).forEach((e)-> System.out.println(e));
 
     }
 }
