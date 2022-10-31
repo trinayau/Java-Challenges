@@ -9,6 +9,7 @@ import java.util.Scanner;
 
             System.out.print("Give a year: ");
             int year = Integer.valueOf(scan.nextLine());
+
             if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
                 System.out.println("The year is a leap year.");
             } else {
